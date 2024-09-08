@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Welding - Fabrication Works</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0; /* Light gray for text */
+            background-color: #121212; /* Very dark gray for background */
+        }
+
+        /* Header */
+        header {
+            background: #004d40; /* Dark mint color */
+            padding: 20px;
+            text-align: center;
+            color: #e0e0e0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('images/metal-welding-hero.jpg') no-repeat center center/cover; /* Background image */
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Overlay to darken the image */
+            z-index: 1;
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 3rem;
+            color: #a7ffeb; /* Mint color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #a7ffeb; /* Mint color */
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #b0bec5; /* Light grayish blue */
+            margin-bottom: 20px;
+        }
+
+        /* Features List */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: rgba(0, 77, 64, 0.3); /* Dark mint with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card h3 {
+            color: #a7ffeb; /* Mint color */
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #e0e0e0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 150, 136, 0.5); /* Mint shadow */
+        }
+
+        /* Call to Action */
+        .cta {
+            margin-top: 30px;
+        }
+
+        .cta button {
+            background: #009688; /* Brighter mint */
+            border: none;
+            padding: 15px 30px;
+            color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta button:hover {
+            background: #00bfa5; /* Even brighter mint on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Metal Welding
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Expert Metal Welding Services</h1>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h2>Why Choose Our Metal Welding Services?</h2>
+        <p>Our expert welding services are tailored to meet your project needs with precision and quality. Whether you need structural welding or custom metalwork, we deliver professional results every time.</p>
+
+        <!-- Features List -->
+        <div class="features">
+            <div class="feature-card">
+                <h3>High-Quality Welds</h3>
+                <p>We ensure strong and durable welds that meet the highest standards.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Experienced Welders</h3>
+                <p>Our team consists of certified welders with years of experience in the industry.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Advanced Techniques</h3>
+                <p>We use the latest welding techniques and equipment for optimal results.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Solutions</h3>
+                <p>We provide custom welding solutions tailored to your specific project requirements.</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <button onclick="window.location.href='contact.html'">Request a Quote</button>
+        </div>
+    </section>
+
+</body>
+</html>

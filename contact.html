@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fabrication Works</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0; /* Light gray for text */
+            background-color: #121212; /* Very dark gray for background */
+        }
+
+        /* Header */
+        header {
+            background: #004d40; /* Dark mint color */
+            padding: 20px;
+            text-align: center;
+            color: #e0e0e0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .contact-form, .contact-details {
+            background: rgba(0, 77, 64, 0.3); /* Dark mint with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form h2, .contact-details h2 {
+            color: #a7ffeb; /* Mint color */
+            margin-bottom: 20px;
+        }
+
+        /* Contact Form */
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            color: #e0e0e0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .contact-form button {
+            background: #009688; /* Brighter mint */
+            border: none;
+            padding: 15px 30px;
+            color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #00bfa5; /* Even brighter mint on hover */
+        }
+
+        /* Contact Details */
+        .contact-details p {
+            margin-bottom: 10px;
+            color: #b0bec5; /* Light grayish blue */
+        }
+
+        .contact-details a {
+            color: #a7ffeb;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Map Section */
+        .map {
+            grid-column: 1 / -1;
+            height: 300px;
+            background: #004d40; /* Placeholder color for the map */
+            border-radius: 10px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Contact Us
+    </header>
+
+    <!-- Main Content -->
+    <section class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 Fabrication Street, Metal City, MC 56789</p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@fabricationworks.com">info@fabricationworks.com</a></p>
+            <p><strong>Business Hours:</strong> Mon - Fri, 9 AM - 6 PM</p>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+            <!-- Embed Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.760491163912!2d-122.08424938469113!3d37.42199987982525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5d0b0e0c1d1%3A0x2e567ed6c614be1b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614082561205!5m2!1sen!2sus" 
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+</body>
+</html>
