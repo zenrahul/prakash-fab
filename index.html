@@ -151,6 +151,12 @@
             });
         });
     </script>
+    <script>
+        // Redirect to home page on page refresh
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = 'index.html'; // Update with your home page URL
+        }
+    </script>
     
 </body>
 </html>
