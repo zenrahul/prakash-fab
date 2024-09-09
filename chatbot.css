@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Chatbot Toggle Button */
+.chatbot-toggle {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #00b2e2;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.chatbot-toggle:hover {
+    background-color: #002b30;
+}
+
+/* Chatbot Container */
+.chatbot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: rgba(18, 18, 18, 0.9); /* Dark, transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    background: #00b2e2; /* Dark mint color */
+    padding: 10px;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-chatbot {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Chatbot Messages Area */
+.chatbot-messages {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chatbot Message Styles */
+.chatbot-message {
+    background: rgba(255, 255, 255, 0.1); /* Blur transparent */
+    backdrop-filter: blur(5px);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 5px 0;
+    max-width: 80%;
+    line-height: 1.4;
+    color: #e0e0e0;
+}
+
+.bot {
+    align-self: flex-start;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #009688; /* Mint color */
+}
+
+/* Input Area */
+.chatbot-input-area {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e06f;
+}
+
+#send-btn {
+    background: #00b2e2;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #002c35;
+}
